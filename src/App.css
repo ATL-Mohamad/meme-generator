@@ -7,9 +7,8 @@ main {
   margin: 0%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #e66706 1.18%, #A626D3 100%);
   color: white;
   padding: 20px;
 }
@@ -17,6 +16,12 @@ main {
 .nav-logo{
   font-weight: 600;
   display: flex;
+  margin-right: auto;
+}
+
+.nav-logo:hover{
+  cursor: pointer;
+  font-size: 110%;
 }
 
 .logo-img{
@@ -24,14 +29,31 @@ main {
   margin-right: 10px;
 }
 
-.nav-author{
-  font-weight: 200;
-  padding: 10px;
+.nav-account{
+  display: flex;
 }
 
-.nav-link{
-  text-decoration: none;
+.nav-login{
+  margin-right: 22px;
+}
+
+.nav-my-favorite,
+.nav-login{
+  -webkit-text-stroke: 0.5px black;
+  background-color: transparent;
   color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.nav-my-favorite:hover,
+.nav-login:hover{
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .form {
@@ -53,10 +75,12 @@ main {
   grid-column: 1 / -1;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  background: linear-gradient(90.41deg, #A626D3 1.14%, #e66706 100%);
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .meme {
@@ -100,4 +124,73 @@ main {
 
 .top {
   top: 0;
+}
+
+.sign-in-page{
+  margin-top: 45px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.sign-in-page label{
+  margin-right: 15px;
+}
+
+.sign-in-page input{
+  width: 200px;
+  height: 25px;
+  text-indent: 5px;
+}
+
+.btn{
+  border: none;
+  border-radius: 4px;
+  width: 400px;
+  padding: 10px;
+  background: linear-gradient(90.41deg, #A626D3 1.14%, #e66706 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.alert-box{
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  font-size: 20px;
+  background-color: #e66706;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.current-user-container{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+  font-size: 20px;
+  background-color: #c434f8;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 25px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.fav-page{
+  margin-top: 45px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }

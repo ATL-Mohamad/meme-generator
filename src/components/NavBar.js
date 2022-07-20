@@ -1,14 +1,18 @@
 
-export default function NavBar(){
+export default function NavBar(props){
   return(
     <div className="nav-bar">
 
-    <div className="nav-logo">
-      <img className="logo-img" src={require('../Trollface.png')} />
+    <div className="nav-logo" onClick={() => props.handleClick('main')}>
+      <img className="logo-img" src={require('../Trollface.png')} alt=''/>
       <h2 className='logo-text'>MoMo's Meme Generator</h2>
     </div>
 
-    <h4 className='nav-author'> <a href='https://github.com/ATL-Mohamad' className='nav-link'> By: Mohamad </a> </h4>
+    <div className='nav-account'>
+      {!props.logInStatus && <button className='nav-login' onClick={() => props.handleClick('login')}>Sign in</button>}
+      {props.logInStatus && <button className='nav-login' onClick={() => props.handleClick('login')}>Switch account</button>}
+      <button className='nav-my-favorite'onClick={() => props.handleClick('fav')}>My Favorite</button>
+    </div>
 
     </div>
   )
