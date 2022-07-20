@@ -3,9 +3,6 @@ import { useState, useEffect } from "react"
 export default function FavPage(props){
 
   const [isSet, setIsSet] = useState(false)
-
-  console.log(props.currentFav)
-
   
   useEffect(() =>{
     if(props.currentFav.topText !== '' || props.currentFav.bottomText !== ''){
