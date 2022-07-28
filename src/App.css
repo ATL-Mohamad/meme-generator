@@ -56,6 +56,20 @@ main {
   font-size: 18px;
 }
 
+.footer{
+  padding: 20px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #e66706 1.18%, #A626D3 100%);
+  color: white;
+}
+
+.footer div{
+  margin: 10px;
+}
+
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
@@ -86,6 +100,7 @@ main {
 .meme {
   position: relative;
   text-align: center;
+  margin-bottom: 47px;
 }
 
 .meme--image {
@@ -127,7 +142,8 @@ main {
 }
 
 .sign-in-page{
-  margin-top: 45px;
+  margin-top: 55px;
+  margin-bottom:21.8%;
   padding: 26px;
   display: flex;
   flex-direction: column;
@@ -175,14 +191,14 @@ main {
 
 .current-user-container{
   position: absolute;
-  bottom:10px;
-  left:10px;
+  top: 250px;
+  left: 35px;
   font-size: 20px;
   background-color: #c434f8;
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 0px 25px;
   -webkit-text-stroke: 0.5px black;
 }
 
@@ -192,5 +208,5 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-bottom: 60px;
 }

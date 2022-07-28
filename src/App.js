@@ -5,6 +5,7 @@ import Meme from "./components/Meme";
 import AlertBox from "./components/AlertBox";
 import CurrentUser from "./components/CurrentUser";
 import FavPage from "./components/FavPage";
+import Footer from "./components/Footer";
 import './App.css'
 
 export default function App() {
@@ -73,6 +74,7 @@ export default function App() {
   /* State change functions*/
 
   return (
+
    <div>
     <NavBar 
       handleClick = {currentDisplay}
@@ -83,8 +85,10 @@ export default function App() {
     {displayChoice === 'fav' && <FavPage currentFav={currentMeme}/>}
     {showAlert && <AlertBox />}
     {logedIn && <CurrentUser userInformation={userInfo}/>}
+    <Footer />
    </div>
-  );
+  
+  )
 }
 
 
