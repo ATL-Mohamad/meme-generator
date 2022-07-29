@@ -70,6 +70,11 @@ main {
   margin: 10px;
 }
 
+.footer div:hover{
+  cursor: pointer;
+  font-size: 110%;
+}
+
 .form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
@@ -209,4 +214,9 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+}
+
+.about-page{
+  margin: 20px 100px auto 100px;
+  text-align: center;
 }

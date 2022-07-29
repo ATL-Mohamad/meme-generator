@@ -6,6 +6,7 @@ import AlertBox from "./components/AlertBox";
 import CurrentUser from "./components/CurrentUser";
 import FavPage from "./components/FavPage";
 import Footer from "./components/Footer";
+import AboutPage from "./components/AboutPage";
 import './App.css'
 
 export default function App() {
@@ -83,9 +84,12 @@ export default function App() {
     {displayChoice === 'main' && <Meme updateMeme={updateMeme}/>}
     {displayChoice === 'login' && <SignIn handleSubmit={handleSubmit}/>}
     {displayChoice === 'fav' && <FavPage currentFav={currentMeme}/>}
+    {displayChoice === 'info' && <AboutPage /> }
     {showAlert && <AlertBox />}
     {logedIn && <CurrentUser userInformation={userInfo}/>}
-    <Footer />
+    <Footer
+      handleClick = {currentDisplay}
+    />
    </div>
   
   )
